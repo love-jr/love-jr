@@ -1,68 +1,27 @@
-<!--
-  这里是你的 GitHub 主页（Profile README）。
-  如果想补充姓名/学校/求职方向，把下面「个人简介」一节的占位符替换掉即可。
-  注意：只写能站得住的事实，面试官会点进仓库核对。
--->
+# 姜锐 · love-jr
 
-# Hi, I'm love-jr 👋
-
-专注于 **LLM Agent** 与 **多模态数据**：让大模型生成可执行代码、构建可复现的训练与评测流程。
+中国科学技术大学 · 控制科学与工程（硕士在读）
+方向：LLM Agent / 多模态数据 / 图表生成
+邮箱：midnightpoetjr@163.com
 
 ---
 
-## 🔭 代表项目
+## 教育背景
 
-### [chartgen-agent](https://github.com/love-jr/chartgen-agent) · 图表生成 Agent
-用大模型自动化生成 R/ggplot2 图表代码的 Agent 框架。
+**中国科学技术大学**（C9 / 985 / 双一流）　控制科学与工程 · 硕士　2026.09 – 2029.06
+与中国科学院自动化研究所联合培养，导师：胡卫明、查正军（均为国家杰青）。
 
-- **数据 → 代码 → 出图 → 自评 → 优化** 的完整闭环：LLM 先生成贴合主题的数据，再生成绘图代码，由 `Rscript` 实际执行，最后由模型对成图打分，低于阈值则回炉优化重出
-- 支持 **多模型横向对比**（GPT-4o / o1 / Claude 3.7 Sonnet / DeepSeek-V3 / ERNIE / QwQ-32B 等），便于评测"哪个模型画图更好"
-- 内置 **带模板 / 不带模板** 两条生成路线，用于对比模板对成图质量的影响
-- 自动为生成的 R 代码补全缺失的 `library()` 声明，降低执行失败率
-
-`Python` · `LLM Agent` · `R / ggplot2` · `多模型评测`
-
-### MMQA2 · 多模态图表问答数据集（协作项目，私有）
-面向 **图表-文本融合问答与推理** 的大规模多模态数据集，负责数据生成管线的主要开发。
-
-- 设计 **主题 → 文章 → 图表数据 → 绘图代码** 的多级生成流程，覆盖政治、社会文化、经济科技、媒体传播四大主题域
-- 编写数据生成、文本续写、图表渲染等模块，并沉淀了一套提示词模板
-- 项目贡献度 82%（14 / 17 commits）
-
-`多模态数据集` · `数据生成管线` · `Prompt Engineering`
-
-### [ustc_auto_course_registration](https://github.com/love-jr/ustc_auto_course_registration) · 开源协作
-参与中科大选课脚本项目的模块化重构（上游 fork，协作开发）。
-
-- 把原先 800+ 行的单文件脚本按职责拆分为 11 个模块（配置 / 接口 / 字段解析 / 冲突判定 / 节奏控制 / 通知 / 登录 / 主循环 / CLI）
-- 用 **21 组纯函数 fixture + 端到端调用序列比对 + 6 个异常场景** 做回归验证，确保重构不改变行为
-- 修复了原仓库把学号、邮箱等个人信息硬编码进版本控制的隐私问题，改为分层配置
-
-`Python` · `Playwright` · `重构与回归测试`
+**重庆大学**（985 / 双一流）　计算机科学与技术（卓越班） · 学士　2022.09 – 2026.06
+GPA 3.86 / 4.0（年级前 3.5%）；获国家奖学金、重庆市三好学生。
 
 ---
 
-## 🛠 技术栈
+## 论文
 
-```text
-语言         Python · Java · R · Shell
-AI / Agent   LLM Agent · Prompt Engineering · 多模型评测 · GRPO / RL 后训练
-数据         多模态数据集构建 · 数据生成管线
-工程         重构 · 回归测试 · Playwright 自动化 · Spring Boot
-```
+**ChartGen-Agent: A Three-Stage Framework for Automated High-Quality Chart Generation**
+Rui Jiang, Shenrong Wu, Zhehao Wu, Zhenjie Han, Jiang Zhong. ADMA 2025（CCF-C），LNCS 16200, pp. 19–32.
+[DOI: 10.1007/978-981-95-3462-3_2](https://doi.org/10.1007/978-981-95-3462-3_2) · 代码：[chartgen-agent](https://github.com/love-jr/chartgen-agent)
 
----
+提出「模板生成 → 约束增强 → 多维评估优化」三阶段框架，实现从数据到高质量图表的端到端生成。
 
-## 📌 目前在做
-
-- 把 chartgen-agent 的实验结论整理成可复现的评测报告
-- 探索图表理解与生成之间的闭环（生成质量 → 自动评分 → 定向优化）
-
----
-
-<!-- 可选：补充个人简介。填好后删掉这段注释。
-## 关于我
-- 🎓 学校 / 专业 / 学位
-- 💼 求职方向：xxx
-- 📫 联系：你的邮箱
--->
+对本方向有合作或交流意向，欢迎邮件联系。
